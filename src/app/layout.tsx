@@ -13,11 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "VibePortfolio | Creative Portfolio",
+  title: "berkod.dev | Creative Portfolio",
   description: "A creative portfolio showcasing projects and skills with an artistic flair.",
   keywords: ["portfolio", "creative", "3D", "web development", "design"],
-  authors: [{ name: "VibePortfolio" }],
-  creator: "VibePortfolio",
+  authors: [{ name: "Berk Logun" }],
+  creator: "berkod.dev",
 };
 
 export default function RootLayout({

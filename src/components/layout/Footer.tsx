@@ -42,7 +42,7 @@ const Footer = () => {
           {/* Logo and description */}
           <div>
             <Link href="/" className="text-white font-bold text-2xl">
-              <span className="text-purple-500">Vibe</span>Portfolio
+              <span className="text-purple-500">berkod</span>.dev
             </Link>
             <p className="mt-4 text-gray-400 text-sm">
               A creative portfolio showcasing my work and skills. Built with Next.js, Three.js, and Sanity CMS.
