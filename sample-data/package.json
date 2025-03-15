@@ -1,0 +1,16 @@
+{
+  "name": "vibe-portfolio-sample-data",
+  "version": "1.0.0",
+  "description": "Sample data for VibePortfolio",
+  "type": "module",
+  "scripts": {
+    "import": "node --experimental-json-modules import-data.js",
+    "download-images": "node download-images.js",
+    "image-guide": "node upload-images.js",
+    "setup": "npm run download-images && npm run import"
+  },
+  "dependencies": {
+    "@sanity/client": "^6.1.7",
+    "dotenv": "^16.3.1"
+  }
+} 

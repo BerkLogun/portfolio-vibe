@@ -1,0 +1,161 @@
+[
+  {
+    "_type": "project",
+    "title": "Modern E-commerce Platform",
+    "slug": {
+      "_type": "slug",
+      "current": "modern-ecommerce-platform"
+    },
+    "publishedAt": "2023-12-15",
+    "description": [
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "A full-featured e-commerce platform built with Next.js, Tailwind CSS, and Stripe integration. The platform includes product listings, cart functionality, user authentication, and payment processing."
+          }
+        ]
+      }
+    ],
+    "technologies": [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Stripe",
+      "MongoDB",
+      "Vercel"
+    ],
+    "projectUrl": "https://example-ecommerce.com",
+    "githubUrl": "https://github.com/yourusername/ecommerce-platform",
+    "featured": true
+  },
+  {
+    "_type": "project",
+    "title": "3D Portfolio Showcase",
+    "slug": {
+      "_type": "slug",
+      "current": "3d-portfolio-showcase"
+    },
+    "publishedAt": "2023-10-20",
+    "description": [
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "An interactive 3D portfolio website built with Three.js and React. Features include 3D models, animations, and a custom shader for the background effect."
+          }
+        ]
+      }
+    ],
+    "technologies": [
+      "Three.js",
+      "React",
+      "GLSL Shaders",
+      "Framer Motion",
+      "Vite"
+    ],
+    "projectUrl": "https://3d-portfolio-example.com",
+    "githubUrl": "https://github.com/yourusername/3d-portfolio",
+    "featured": true
+  },
+  {
+    "_type": "project",
+    "title": "AI-Powered Content Generator",
+    "slug": {
+      "_type": "slug",
+      "current": "ai-powered-content-generator"
+    },
+    "publishedAt": "2023-08-05",
+    "description": [
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "A web application that uses OpenAI's GPT-4 to generate various types of content, including blog posts, social media captions, and marketing copy. The app includes a user-friendly interface and customization options."
+          }
+        ]
+      }
+    ],
+    "technologies": [
+      "React",
+      "Node.js",
+      "Express",
+      "OpenAI API",
+      "MongoDB",
+      "AWS"
+    ],
+    "projectUrl": "https://ai-content-gen.com",
+    "githubUrl": "https://github.com/yourusername/ai-content-generator",
+    "featured": true
+  },
+  {
+    "_type": "project",
+    "title": "Real-time Chat Application",
+    "slug": {
+      "_type": "slug",
+      "current": "real-time-chat-application"
+    },
+    "publishedAt": "2023-06-10",
+    "description": [
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "A real-time chat application with features like private messaging, group chats, file sharing, and read receipts. Built with Socket.io for real-time communication."
+          }
+        ]
+      }
+    ],
+    "technologies": [
+      "React",
+      "Node.js",
+      "Socket.io",
+      "Express",
+      "MongoDB",
+      "JWT"
+    ],
+    "projectUrl": "https://chat-app-example.com",
+    "githubUrl": "https://github.com/yourusername/chat-application",
+    "featured": false
+  },
+  {
+    "_type": "project",
+    "title": "Fitness Tracking Mobile App",
+    "slug": {
+      "_type": "slug",
+      "current": "fitness-tracking-mobile-app"
+    },
+    "publishedAt": "2023-04-15",
+    "description": [
+      {
+        "_type": "block",
+        "style": "normal",
+        "children": [
+          {
+            "_type": "span",
+            "text": "A cross-platform mobile app for tracking workouts, nutrition, and progress. Features include custom workout plans, calorie tracking, and progress visualization."
+          }
+        ]
+      }
+    ],
+    "technologies": [
+      "React Native",
+      "Expo",
+      "Firebase",
+      "Redux",
+      "Chart.js",
+      "Google Fit API"
+    ],
+    "projectUrl": "https://fitness-app.example.com",
+    "githubUrl": "https://github.com/yourusername/fitness-app",
+    "featured": false
+  }
+] 

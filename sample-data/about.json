@@ -1,0 +1,60 @@
+{
+  "_type": "about",
+  "name": "Alex Johnson",
+  "role": "Full Stack Developer & UI/UX Designer",
+  "shortBio": "I'm a passionate full-stack developer and UI/UX designer with over 5 years of experience creating beautiful, functional, and user-centered digital experiences.",
+  "fullBio": [
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "I specialize in building modern web applications using React, Next.js, and Node.js. With a strong foundation in both frontend and backend development, I create seamless experiences that delight users and solve real-world problems."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "My journey in web development began during my computer science studies, where I discovered my passion for creating interactive and visually appealing interfaces. Since then, I've worked with startups and established companies to bring their digital products to life."
+        }
+      ]
+    },
+    {
+      "_type": "block",
+      "style": "normal",
+      "children": [
+        {
+          "_type": "span",
+          "text": "When I'm not coding, you can find me exploring new design trends, contributing to open-source projects, or hiking in the great outdoors. I'm always eager to learn new technologies and techniques to enhance my skills and deliver better solutions."
+        }
+      ]
+    }
+  ],
+  "email": "alex@example.com",
+  "phone": "+1 (555) 123-4567",
+  "location": "San Francisco, CA",
+  "socialLinks": [
+    {
+      "platform": "GitHub",
+      "url": "https://github.com/alexjohnson"
+    },
+    {
+      "platform": "LinkedIn",
+      "url": "https://linkedin.com/in/alexjohnson"
+    },
+    {
+      "platform": "Twitter",
+      "url": "https://twitter.com/alexjohnson"
+    },
+    {
+      "platform": "Dribbble",
+      "url": "https://dribbble.com/alexjohnson"
+    }
+  ],
+  "resumeURL": "https://example.com/alex-johnson-resume.pdf"
+} 

@@ -1,0 +1,27 @@
+[
+  {
+    "_type": "category",
+    "title": "Web Development",
+    "description": "Projects related to web development, including frontend and backend technologies."
+  },
+  {
+    "_type": "category",
+    "title": "Mobile Development",
+    "description": "Projects related to mobile app development for iOS and Android."
+  },
+  {
+    "_type": "category",
+    "title": "UI/UX Design",
+    "description": "Projects focused on user interface and user experience design."
+  },
+  {
+    "_type": "category",
+    "title": "3D & Animation",
+    "description": "Projects involving 3D modeling, rendering, and animation."
+  },
+  {
+    "_type": "category",
+    "title": "Machine Learning",
+    "description": "Projects related to machine learning, AI, and data science."
+  }
+] 

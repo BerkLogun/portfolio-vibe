@@ -1,0 +1,128 @@
+[
+  {
+    "_type": "skill",
+    "name": "React",
+    "proficiency": 90,
+    "category": "frontend",
+    "order": 1
+  },
+  {
+    "_type": "skill",
+    "name": "Next.js",
+    "proficiency": 85,
+    "category": "frontend",
+    "order": 2
+  },
+  {
+    "_type": "skill",
+    "name": "TypeScript",
+    "proficiency": 80,
+    "category": "frontend",
+    "order": 3
+  },
+  {
+    "_type": "skill",
+    "name": "Tailwind CSS",
+    "proficiency": 95,
+    "category": "frontend",
+    "order": 4
+  },
+  {
+    "_type": "skill",
+    "name": "Three.js",
+    "proficiency": 75,
+    "category": "frontend",
+    "order": 5
+  },
+  {
+    "_type": "skill",
+    "name": "Node.js",
+    "proficiency": 85,
+    "category": "backend",
+    "order": 1
+  },
+  {
+    "_type": "skill",
+    "name": "Express",
+    "proficiency": 80,
+    "category": "backend",
+    "order": 2
+  },
+  {
+    "_type": "skill",
+    "name": "MongoDB",
+    "proficiency": 75,
+    "category": "backend",
+    "order": 3
+  },
+  {
+    "_type": "skill",
+    "name": "PostgreSQL",
+    "proficiency": 70,
+    "category": "backend",
+    "order": 4
+  },
+  {
+    "_type": "skill",
+    "name": "GraphQL",
+    "proficiency": 65,
+    "category": "backend",
+    "order": 5
+  },
+  {
+    "_type": "skill",
+    "name": "Figma",
+    "proficiency": 85,
+    "category": "design",
+    "order": 1
+  },
+  {
+    "_type": "skill",
+    "name": "Adobe Photoshop",
+    "proficiency": 75,
+    "category": "design",
+    "order": 2
+  },
+  {
+    "_type": "skill",
+    "name": "Adobe Illustrator",
+    "proficiency": 70,
+    "category": "design",
+    "order": 3
+  },
+  {
+    "_type": "skill",
+    "name": "UI/UX Design",
+    "proficiency": 80,
+    "category": "design",
+    "order": 4
+  },
+  {
+    "_type": "skill",
+    "name": "Git",
+    "proficiency": 90,
+    "category": "other",
+    "order": 1
+  },
+  {
+    "_type": "skill",
+    "name": "Docker",
+    "proficiency": 75,
+    "category": "other",
+    "order": 2
+  },
+  {
+    "_type": "skill",
+    "name": "AWS",
+    "proficiency": 70,
+    "category": "other",
+    "order": 3
+  },
+  {
+    "_type": "skill",
+    "name": "CI/CD",
+    "proficiency": 65,
+    "category": "other",
+    "order": 4
+  }
+] 
