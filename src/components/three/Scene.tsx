@@ -74,6 +74,8 @@ const AnimatedBlob = ({ position = [0, 0, 0], color = '#8352FD' }) => {
         speed={1.5}
         roughness={0.2}
         metalness={0.8}
+        transparent
+        opacity={0.8}
       />
     </Sphere>
   )
@@ -92,8 +94,25 @@ const Scene = () => {
   }
 
   return (
-    <div className="fixed inset-0 -z-10">
-      <Canvas camera={{ position: [0, 0, 5], fov: 75 }}>
+    <div className="fixed inset-0 -z-10 w-full h-full pointer-events-none">
+      <Canvas 
+        camera={{ position: [0, 0, 5], fov: 75 }}
+        gl={{ 
+          alpha: true,
+          antialias: true,
+          preserveDrawingBuffer: true
+        }}
+        style={{ 
+          background: 'transparent',
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%'
+        }}
+      >
+        <color attach="background" args={['#050816']} />
+        <fog attach="fog" args={['#050816', 5, 15]} />
         <ambientLight intensity={0.5} />
         <pointLight position={[10, 10, 10]} intensity={1} />
         <AnimatedBlob position={[0, 0, 0]} color="#8352FD" />

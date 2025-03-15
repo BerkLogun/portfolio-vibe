@@ -11,10 +11,10 @@ interface MainLayoutProps {
 
 const MainLayout = ({ children }: MainLayoutProps) => {
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col">
+    <div className="min-h-screen bg-transparent text-white flex flex-col relative">
       <Scene />
       <Navbar />
-      <main className="flex-grow pt-24">
+      <main className="flex-grow pt-24 relative z-10">
         {children}
       </main>
       <Footer />

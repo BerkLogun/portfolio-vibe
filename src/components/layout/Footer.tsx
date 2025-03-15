@@ -36,7 +36,7 @@ const Footer = () => {
   ]
 
   return (
-    <footer className="bg-black/90 text-white py-12">
+    <footer className="bg-black/50 backdrop-blur-sm text-white py-12 relative z-10">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Logo and description */}
@@ -44,7 +44,7 @@ const Footer = () => {
             <Link href="/" className="text-white font-bold text-2xl">
               <span className="text-purple-500">berkod</span>.dev
             </Link>
-            <p className="mt-4 text-gray-400 text-sm">
+            <p className="mt-4 text-gray-300 text-sm">
               A creative portfolio showcasing my work and skills. Built with Next.js, Three.js, and Sanity CMS.
             </p>
           </div>
