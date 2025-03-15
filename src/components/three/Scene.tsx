@@ -34,9 +34,15 @@ const Particles = ({ count = 100, color = '#8352FD' }) => {
         )
         dummy.scale.set(particle.scale, particle.scale, particle.scale)
         dummy.updateMatrix()
-        mesh.current.setMatrixAt(i, dummy.matrix)
+        
+        if (mesh.current) {
+          mesh.current.setMatrixAt(i, dummy.matrix)
+        }
       })
-      mesh.current.instanceMatrix.needsUpdate = true
+      
+      if (mesh.current) {
+        mesh.current.instanceMatrix.needsUpdate = true
+      }
     }
   })
 

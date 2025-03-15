@@ -6,6 +6,8 @@ import { urlFor } from '@/lib/sanity'
 import { SanityImageSource } from '@sanity/image-url/lib/types/types'
 import { PortableTextBlock } from '@portabletext/types'
 import { notFound } from 'next/navigation'
+import { PortableText } from '@portabletext/react'
+import type { PortableTextComponents } from '@portabletext/react'
 
 export const revalidate = 3600 // Revalidate at most every hour
 
@@ -23,14 +25,58 @@ interface Project {
   publishedAt: string
 }
 
-interface Props {
-  params: {
-    slug: string
-  }
+// Custom components for PortableText rendering
+const portableTextComponents: PortableTextComponents = {
+  block: {
+    normal: ({ children }) => (
+      <p className="text-gray-300 mb-4">{children}</p>
+    ),
+    h1: ({ children }) => (
+      <h1 className="text-3xl font-bold mb-4 mt-8">{children}</h1>
+    ),
+    h2: ({ children }) => (
+      <h2 className="text-2xl font-bold mb-3 mt-6">{children}</h2>
+    ),
+    h3: ({ children }) => (
+      <h3 className="text-xl font-bold mb-3 mt-5">{children}</h3>
+    ),
+    blockquote: ({ children }) => (
+      <blockquote className="border-l-4 border-purple-500 pl-4 italic my-6">{children}</blockquote>
+    ),
+  },
+  list: {
+    bullet: ({ children }) => (
+      <ul className="list-disc pl-6 mb-6 text-gray-300">{children}</ul>
+    ),
+    number: ({ children }) => (
+      <ol className="list-decimal pl-6 mb-6 text-gray-300">{children}</ol>
+    ),
+  },
+  marks: {
+    strong: ({ children }) => (
+      <strong className="font-bold">{children}</strong>
+    ),
+    em: ({ children }) => (
+      <em className="italic">{children}</em>
+    ),
+    link: ({ value, children }) => {
+      const href = value?.href || '#';
+      return (
+        <a href={href} className="text-purple-400 hover:text-purple-300 underline" target="_blank" rel="noopener noreferrer">
+          {children}
+        </a>
+      );
+    },
+  },
 }
 
-export default async function ProjectPage({ params }: Props) {
-  const project = await getProjectBySlug(params.slug) as Project
+export default async function ProjectPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>
+}) {
+  const { slug } = await params;
+  const project = await getProjectBySlug(slug) as Project
   
   if (!project) {
     notFound()
@@ -94,11 +140,13 @@ export default async function ProjectPage({ params }: Props) {
             )}
             
             <div className="prose prose-lg prose-invert max-w-none mb-12">
-              {/* In a real app, you'd render the description using a PortableText component */}
-              <p className="text-gray-300">
-                This is where the project description would be rendered using a PortableText component.
-                For now, we&apos;re just displaying this placeholder text.
-              </p>
+              {/* Render the project description using PortableText */}
+              {project.description && (
+                <PortableText 
+                  value={project.description}
+                  components={portableTextComponents}
+                />
+              )}
             </div>
             
             <div className="flex flex-wrap gap-4">
