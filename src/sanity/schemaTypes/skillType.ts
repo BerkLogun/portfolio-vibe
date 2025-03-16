@@ -27,6 +27,14 @@ export const skillType = defineType({
       initialValue: 80,
     }),
     defineField({
+      name: 'experience',
+      title: 'Years of Experience',
+      type: 'number',
+      description: 'Number of years of experience with this skill',
+      validation: (Rule) => Rule.min(0),
+      initialValue: 1,
+    }),
+    defineField({
       name: 'category',
       title: 'Category',
       type: 'string',
